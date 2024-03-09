@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2 {
+    color: black;
+    
+}
+h3 {
+    color: #999;
+}
+@media screen and (max-width: 700px) {
+h1, h2 {
+font-size: 18px;
+
+}
+}
+.btn {
+    background: #84abc2;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: #84abc2;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid ;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+table {
+    padding: 10px;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+.logo {
+  width: 80px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: -110px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:0px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+.logo {
+ width: 60px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: -30px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:15px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+}
+.brand-name h1 {
+  /* Ajouter une marge gauche positive pour créer un espace entre l'icône et le titre */
+  margin-left: -10px;
+}
+@media screen and (max-width: 700px) {
+ .brand-name h1{
+    margin-left: -50px;
+
+}
+}
+.side-menu {
+    position: fixed;
+    background: #84abc2;
+    width: 25vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+    background: #efefef;
+    color: black;
+}
+
+.side-menu ul li i {
+  margin-right: 10px !important;
+}
+
+.side-menu.fa-solid {
+  color: black !important;
+}
+
+
+@media screen and (max-width: 700px) {
+ .side-menu ul li i{
+    margin-left: -40px;
+    font-size: 30px;
+
+}
+}
+
+
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.container .header {
+    position: absolute;
+    
+    right: 0;
+    width: 80vw;
+    height: 13vh;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.container .header .nav {
+    width: 90%;
+       display: flex;
+    justify-content: flex-end;
+}
+
+.container .header .nav .user {
+ 
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 700px) {
+ .brand-name h1{
+    margin-left: -50px;
+
+}
+}
+
+.imguser{
+    width:80px;
+ position: relative;
+  top: 5px;
+   margin-right:-90px;
+    border-radius: 90%;
+}
+@media screen and (max-width: 700px) {
+ .imguser{
+    margin-right: 20px;
+
+}
+}
+
+.user-name {
+  position: relative;
+  top: -20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+ .user-name{
+   margin-right: 50px;
+
+}
+}
+.icon-case i.fa-solid {
+  font-size: 50px;
+  color: #84abc2;
+}
+.user i.fa-solid {
+  font-size: 50px;
+  color: #84abc2;
+}
+
+
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: move 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+.card:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+@media screen and (max-width: 700px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #84abc2;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+    .container .content .content-2 .new {
+       
+        margin-bottom: 30px;
+      
+    
+    }
+}
+@media screen and (max-width:700px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    .user-info {
+       
+        margin-right: -50px;
+      }
+}
+
+
+
+  .user-info {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .imguser {
+   
+     margin-top:-7px;
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+  }
+  
+  .nom {
+   
+   padding-right: 20px;
+     margin-top:-7px;
+     font-weight: bold; /* mettre en gras */
+     font-style: oblique;
+     font-size: 30px; /* taille de la police */
+     color: #84abc2;
+  }
+  .admin-greeting {
+
+    font-weight: bold;
+    margin-right: -80px;
+    margin-top: 50px;
+    padding-top: 2px;
+  font-size: 15px;
+  font-style: italic;
+
+  }

@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+
+}
+
+  
+  h1 {
+  
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left:20%;
+  }
+  
+  nav {
+    margin-right: 20px;
+  }
+  
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+
+}
+
+.lien {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+    color:beige
+}
+
+
+.logo {
+  width: 80px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-top:0px;
+  margin-left: -110px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:5px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.lg h1 {
+  /* Ajouter une marge gauche positive pour crÃ©er un espace entre l'icÃ´ne et le titre */
+  margin-left: -10px;
+}
+@media screen and (max-width: 700px) {
+.logo {
+ width: 60px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: 50px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:50px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+}
+
+
+.side-menu {
+    position: fixed;
+    background: #84abc2;
+    width: 23vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.side-menu .lg {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.side-menu ul li i {
+  margin-left:-110px;
+  margin-right: 5px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .side-menu li {
+        font-size: 30px;
+    }
+    .side-menu ul li i {
+  margin-left:-10px;
+  margin-right: 5px !important;
+}
+}
+@media screen and (max-width: 700px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+   
+    .side-menu li:hover {
+        background: #84abc2;
+        padding: 8px 38px;
+        
+    }
+}
+body{
+  background:url(media/image_fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+label{
+    display: block;
+    text-align: center;
+    font-weight: 300;
+  
+    font-style: oblique;
+    
+  
+    margin-top: 5px;
+  
+    margin-left: 10px;
+    
+    
+  }
+input{
+  margin-top: 10px;
+  margin-bottom: -5px; 
+  margin-left: 100px;
+  border-color: black;
+  border-radius: 6px;
+  width: 300px;
+  height:33px;
+  text-align: center;
+}
+.care{
+  margin-top: 30px;
+  background-color: #84abc2;
+  border-radius: 100px;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+
+
+.boutton{
+    border-radius: 100px;
+    background-color: white;
+    color:black;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    width:50px;
+}
+.boutton:hover{
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 700px){
+  .care{
+   height: 600px;
+    width:350px;
+    margin-top: 5px;
+    
+  }
+  input{
+    margin-top: 10px;
+    
+    margin-left: 80px;
+
+    width: 200px;
+    height:35px;
+     }
+     
+     
+    
+ h1{
+    font-size: 17px;
+ }
+ 
+    }
+    #login {
+        max-width: 600px;
+        margin: auto;
+      }
+      
+      
+      .form-group input[type="text"],
+      .form-group input[type="file"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      
+      .form-group button[type="submit"] {
+        background-color: #84abc2;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        float: right;
+        margin-top: 40px;
+        margin-right: 95px;
+        width:300px;
+      }
+      
+      .form-group button[type="submit"]:hover {
+        background-color: black;
+      }
+
+
+@media screen and (max-width: 700px){
+      .form-group button[type="submit"] {
+        background-color: #84abc2;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+      
+      }
+      

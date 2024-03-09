@@ -1,0 +1,137 @@
+<!DOCTYPE >
+<html lang="en"> <!-- Début de la balise HTML avec l'attribut lang pour spécifier la langue (en pour anglais) -->
+    <head>
+        <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères en UTF-8 -->
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Définition de la compatibilité pour Internet Explorer -->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Définition de la taille d'affichage pour les appareils mobiles -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Préchargement des ressources externes pour accélérer le chargement de la page -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <!-- Inclure Font Awesome pour avoir accès aux icônes -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importation de la bibliothèque de polices d'icônes Font Awesome -->
+        <!--  l'élément <link> qui définit l'icône de page-->
+        <link rel="icon" href="images/l.gif" sizes="128x128" style="border-radius: 50%;">
+       
+      <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>Admin</title>
+    <link rel="stylesheet" href="Admin.css"><!-- Inclure la feuille de style CSS personnalisé -->
+    
+</head>
+<body>
+    <section class="box">
+        <nav>
+            <!-- Logo de site web, redirige vers la page d'accueil -->
+               <a href="accueil.html"  > <img src="images/logo.png"  style="border-radius: 80%;" ></a>
+
+                <div class="nav-links" id="navLinks"> <!-- Définition des liens de navigation avec la classe nav-links et l'identifiant navLinks pour le menu mobile -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- Icône pour fermer le menu mobile avec l'appel de la fonction hideMenu() -->
+                <ul id='MenuItems'>
+                       <!-- Liste des liens du menu -->
+                    <li> <a href="accueil.html">Home</a></li>
+                    <li> <a href="accueil.html #login">Login </a></li>
+                    <li> <a href="accueil.html #about">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>  
+                <i class="fa fa-bars" style="float:right" onclick="showMenu()" ></i><!-- Icône pour afficher le menu mobile avec l'appel de la fonction showMenu() -->
+            </nav>
+         <!-- Formulaire de connexion -->
+        <div id="login-form"class="login-page" style="display: block;">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                     <!-- Bouton pour afficher le formulaire de connexion -->
+                    <button type="button" onclick="login()"class="toggle-btn">Login</button>
+                    
+                </div>
+               
+                <form id="login" class="input-group-login" method="post" action="login_admin.php">
+                       <!-- Champs pour le nom d'utilisateur et le mot de passe -->
+                <input type="text" name="username" class="input-field" placeholder="Username" required>
+                <input type="password" name="password" class="input-field" placeholder="Password" required>
+                </br></br>
+                <!-- Bouton pour soumettre le formulaire -->
+                <button type="submit"class="submit-btn">Log in</button>
+		        </form>
+		     
+            </div>
+        </div>
+       </section>
+    <!--footer-->
+    <!-- Menu de bas de page -->
+<section class="footer">
+     <!-- Icônes des réseaux sociaux -->
+    <a href="https://twitter.com"><i class="fa fa-twitter" ></i> </a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin" ></i> </a>
+         <a href="https://www.facebook.com"><i class="fa fa-facebook" ></i> </a>
+         <a href="https://www.instagram.com"><i class="fa fa-instagram" ></i></a>
+<br>
+<!-- Liste des liens du menu du bas -->
+<ul class="list">
+    <li>
+    <a href="accueil.html"> Home  </a>
+    </li>
+
+    <li>
+    <a href="accueil.html #login"> Login </a>
+    </li>
+
+    <li>
+    <a href="accueil.html #about"> About  </a>
+    </li>
+
+    <li>
+    <a href="contact.html"> Contact </a>
+    </li>
+</ul>
+</br>
+<!-- Informations de droits d'auteur -->
+    <p>
+            Copyright © 2023 <strong><em>Unify</em></strong>
+            All rights reserved
+        </p>
+    
+</section>
+
+
+
+<!-- JavaScript pour le formulaire de connexion et le menu de navigation -->
+
+<script>   // Variables pour le formulaire de connexion
+    var x=document.getElementById('login');
+    var z=document.getElementById('btn');
+    function login() // Fonction pour afficher le formulaire de connexion
+    {
+        x.style.left='50px';
+        z.style.left='0px';
+    }
+  
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event)     // Fonction pour fermer le formulaire de connexion en cliquant à l'extérieur de celui-ci
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+
+
+var navLinks =document.getElementById("navLinks");
+ // Fonction pour cacher le menu de navigation
+function hideMenu(){
+    navLinks.style.right="-200px";
+
+}
+    // Fonction pour afficher le menu de navigation
+function showMenu(){
+    navLinks.style.right="0px";
+
+}
+
+</script>
+
+
+</body>
+</html>
+

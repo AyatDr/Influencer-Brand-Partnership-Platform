@@ -1,0 +1,152 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <!--définit l'encodage des caractères utilisé pour afficher la page, qui est UTF-8-->
+        <meta charset="UTF-8">
+        <!--la page doit être rendue dans la dernière version compatible d'Internet Explorer-->
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!--les propriétés de l'affichage initial de la page sur les différents types d'appareils-->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--optimiser le chargement de la police Google et des styles-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <!--d'ajouter des icônes à la page-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <title>Contact Us</title>
+        <!--  l'élément <link> qui définit l'icône de page-->
+        <link rel="icon" href="images/l.gif" sizes="128x128" style="border-radius: 50%;">
+        <link rel="stylesheet" href="contact.css">
+ </head>
+
+  <body>
+    <section class ="header"> <!--start section1-->
+            <!--envelopper la barre de navigation, afin de la distinguer du reste du contenu de la page -->
+            <nav> 
+               <!--logo qui est cliquable, et qui renvoie à la page d'accueil du site -->
+               <a href="accueil.html"  > <img src="images/logo.png" style="border-radius: 80%;" ></a> 
+               <!-- L'élément <div> contient une liste de liens de navigation. Lorsque l'écran est petit,la liste est masquée et un icône de menu est affiché à droite de la barre de navigation. -->
+               <div class="nav-links" id="navLinks"> 
+                <!-- pour l'icone close lorsque on va cliquer sur ce derniere la fct hidemenu fonctionera-->
+                   <i class="fa fa-times" onclick="hideMenu()"></i> 
+    
+    
+                  <ul>
+                    <li> <a href="accueil.html">Home</a></li>
+                    <li> <a href="accueil.html #login">Login </a></li>
+                    <li> <a href="accueil.html #about">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                  </ul>
+             <!-- pour l'icone menu -->
+                <i class="fa fa-bars" style="float:right" onclick="showMenu()" ></i>
+              <!--Les fonctions showMenu() et hideMenu() sont appelées lorsqu'on clique sur les icônes du menu, pour afficher ou masquer la liste de navigation -->
+            </nav>
+
+          <div class="text-box">
+
+             <h1>   Contact Us    </h1>
+
+          </div>
+
+ </section> <!--fin section1-->
+
+ <section class="location"> <!--start section2-->
+             <!--Map -->
+             <!--Cette section correspond à l'intégration d'une carte Google Maps dans la page web. L'élément <iframe> est utilisé pour incorporer la carte dans la page. Le code source de la carte est fourni dans l'attribut src de l'élément <iframe> -->
+
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.574212602761!2d-5.365115625052739!3d35.58889983504182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b43c5e0d298d1%3A0x9ee43fca28b555cb!2stetouan%20city!5e0!3m2!1sfr!2sma!4v1681830173987!5m2!1sfr!2sma"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+             <!-- allowfullscreen: permet de spécifier si la carte peut être mise en mode plein écran
+                  l'attribut loading: permet de spécifier quand la carte doit être chargée, ici lazy est utilisé pour indiquer que la carte doit être chargée lorsque l'utilisateur commence à la faire défiler 
+                  L'attribut referrerpolicy permet de spécifier la politique de référence à suivre pour les requêtes de la page intégrée-->
+
+             </iframe>
+
+  </section> <!--fin section2-->
+
+        <!-- Contact us section-->
+<section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+         <div>
+            <i class="fa fa-home" ></i>
+            <span>
+              <h5><strong> ADDRESS</strong></h5>
+              <p>Tetouan,MOROCCO</p>
+            </span >
+         </div>
+
+        <div>
+            <i class="fa fa-phone" ></i>
+            <span>
+             <h5><strong>+212628636917</strong> </h5>  
+            <p>Monday to saturday, 10AM to 6PM</p>
+            </span >
+         </div>
+
+         <div>
+            <i class="fa fa-envelope-o" ></i>
+            <span>
+               <h5><strong>Unify_site@gmail.com</strong> </h5>
+            <p>Email us your query</p>
+            </span >
+         </div>
+
+        </div>
+        <div class="contact-col">
+            <form action="form-contact.php" method="post" >
+                  <input type="text" name="name" placeholder="Enter your full name" required>
+                  <input type="email" name="email"  placeholder="Enter email address" required>
+                  <input type="text" name="subject" placeholder="Enter your subject" required>
+                  <textarea  rows="8" name="message" placeholder="Message"></textarea>
+                  <button type="submit" class="hero-btn red-btn"> Send Message</button>
+            </form>
+        </div>
+
+     </div>
+     
+</section>
+
+
+
+<!--footer-->
+<section class="footer"><!--start section 6-->
+      <!--Cette section correspond à la partie du bas de page appelée "footer" qui contient plusieurs éléments tels que des liens vers d'autres pages du site, des icônes de réseaux sociaux et une mention de droits d'auteu -->
+       <div class="icons"> <!--cette balise contient les icônes de réseaux sociaux-->
+           <div class="icons">
+            <a href="https://twitter.com"><i class="fa fa-twitter" ></i> </a>
+            <a href="https://www.linkedin.com"><i class="fa fa-linkedin" ></i> </a>
+             <a href="https://www.facebook.com"><i class="fa fa-facebook" ></i> </a>
+             <a href="https://www.instagram.com"><i class="fa fa-instagram" ></i></a>
+            </div>
+       </div>
+     <br>
+
+      <ul class="list"><!--cette balise contient une liste de liens -->
+      <li><a href="accueil.html"> Home</a></li>
+      <li><a href="accueil.html #login"> Login </a></li>
+      <li><a href="accueil.html #about"> About  </a></li>
+      <li><a href="contact.html"> Contact </a></li>
+     </ul>
+     </br>
+    <p>Copyright © 2023 <strong><em>Unify</em></strong>All rights reserved</p>
+    
+   </section><!--fin section 6-->
+
+
+<!------- partie JAVA SCRIPT pour les botons de menu pour small devices---->
+<script>
+    var navLinks =document.getElementById("navLinks");
+      /*La fonction "hideMenu()"cache le menu de navigation en définissant la position de "navLinks.style.right" à -200px*/
+             function hideMenu(){
+             navLinks.style.right="-200px";
+             }
+      /*la fonction "showMenu()" affiche le menu en définissant la position de "navLinks.style.right" à 0px*/
+             function showMenu(){
+             navLinks.style.right="0px";
+             }
+
+ </script>
+
+            </body>
+        </html>

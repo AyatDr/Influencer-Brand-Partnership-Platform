@@ -1,0 +1,298 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <!--définit l'encodage des caractères utilisé pour afficher la page, qui est UTF-8-->
+        <meta charset="UTF-8">
+        <!--la page doit être rendue dans la dernière version compatible d'Internet Explorer-->
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!--les propriétés de l'affichage initial de la page sur les différents types d'appareils-->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--optimiser le chargement de la police Google et des styles-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <!--d'ajouter des icônes à la page-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!--la bibliothèque Swiper permet d'afficher des carrousels sur la page-->
+        <link  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!--la police Google Inconsolata permet de spécifier une police personnalisée pour la page-->
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;700&display=swap" rel="stylesheet">  
+
+        <title> UNIFY</title>
+        <!--  l'élément <link> qui définit l'icône de page-->
+        <link rel="icon" href="images/l.gif" sizes="128x128" style="border-radius: 50%;">
+
+        <!--la page HTML est liée au fichier de style CSS "style.css"-->
+        <link rel="stylesheet" href="style.css">
+        </head>
+
+
+   <body>
+         <section class ="header"> <!--start section1-->
+            <!--envelopper la barre de navigation, afin de la distinguer du reste du contenu de la page -->
+            <nav> 
+               <!--logo qui est cliquable, et qui renvoie à la page d'accueil du site -->
+               <a href="accueil.html"  > <img src="images/logo.png" style="border-radius: 80%;" ></a> 
+               <!-- L'élément <div> contient une liste de liens de navigation. Lorsque l'écran est petit,la liste est masquée et un icône de menu est affiché à droite de la barre de navigation. -->
+               <div class="nav-links" id="navLinks"> 
+                <!-- pour l'icone close lorsque on va cliquer sur ce derniere la fct hidemenu fonctionera-->
+                   <i class="fa fa-times" onclick="hideMenu()"></i>   
+    
+    
+              <ul>
+                   <li> <a href="accueil.html">Home</a></li>
+                   <li> <a href="#login">Login </a></li>
+                   <li> <a href="#about">About</a></li>
+                   <li> <a href="contact.html">Contact</a></li>
+              </ul>
+
+              </div> 
+              <!-- pour l'icone menu -->
+                <i class="fa fa-bars" style="float:right" onclick="showMenu()" ></i>
+              <!--Les fonctions showMenu() et hideMenu() sont appelées lorsqu'on clique sur les icônes du menu, pour afficher ou masquer la liste de navigation -->
+            </nav>
+
+              <div class="text-box">
+
+                           <h1>   Collaboration breeds success     </h1>
+                           <br>
+              <!--Lorsqu'on clique sur ce bouton, le lien pointe vers l'ancre "#login", ce qui signifie que l'utilisateur sera dirigé vers la section de la page avec l'id "login" -->
+                         <a href ="#login" class="hero-btn">SIGN UP</a>
+
+              </div>
+
+      </section> <!--end section1-->
+
+       
+      <section class ="services"><!-- start section2-->
+               <!--Cette section présente les services offerts par la plateforme. -->
+                <h1>  OUR SERVICES   </h1>
+            
+             <div class="row">
+                <div class="service-col">
+                    <h3> Discovering the appropriate influencers </h3>
+                    <p>Our platform can assist brands in discovering the most suitable influencers for their target audience, industry, and marketing objectives.</p>     
+                </div>
+
+               <div class="service-col">
+                <h3>  Managing Campaigns</h3>
+                <p>Our platform can provide tools to manage influencer marketing campaigns, including content creation, publishing, performance tracking, influencer payment, and more.</p>
+               </div>
+
+               <div class="service-col">
+               <h3> Payment and Contract Management</h3>
+          <p> The platform can help manage payments and contracts between brands and influencers, ensuring transparency and compliance.</p>
+              </div>
+            </div>
+      </section> <!--fin section2-->
+
+
+       <!--connexion-->
+      <!--une section de connexion pour différents types d'utilisateurs, tels que les influenceurs, les administrateurs et les marque-->
+      <section class ="connexion" id="login"> <!--end section3-->
+                  <h1>  Sing up for the first time or return to your account as </h1>
+        <div class="row">
+          <!--Les liens sont cliquables et dirigent les utilisateurs vers les pages de connexion correspondantes -->
+              <div class="conx-col">
+                 <a href="Login_inf.html" ><img src="images/inf.jpg" >
+                     <div class="layer"><h3>Influencer</h3></div>
+                   </a>
+              </div>
+
+              <div class="conx-col">
+                   <a href="Admin.html" ><img src="images/admin.jpg" > 
+                     <div class="layer"><h3>Admin</h3></div>
+                  </a>
+              </div>
+
+          <div class="conx-col">
+            <a href="Login_marq.html" ><img src="images/brand.jpg" >
+              <div class="layer"><h3>Brand</h3></div>
+            </a>
+         </div>
+
+        </div>
+     </section><!--fin section3-->
+
+
+<!--Avis clients-->
+
+    <section class ="avis"> <!--fin section4-->
+       <!--Cette section témoignages d'utilisateurs de la plateforme -->
+          <h1>What feedback are we receiving from our clients</h1>
+       <div class="row">
+          <div class="avis-col">
+              <img src="images/user1.jpg" >
+            <div>
+        
+             <h3>Emma KIM </h3>
+             <h3>Influencer</h3>
+             <!--une balise HTML qui affiche une étoile vide -->
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o" ></i><br>
+      
+              <p>Using this collaboration platform has been a game-changer for me as an influencer. <br> 
+              It has opened up so many new opportunities to work with brands that I may not have discovered otherwise.
+              <br> The platform makes it easy to communicate with brands, negotiate terms, and manage campaigns. </p>
+            </div>
+          </div>
+
+          <div class="avis-col">
+                <img src="images/user2.jpg" >
+             <div>
+      
+               <h3>Mark BROUN </h3>
+               <h3>CEO of brand HAYA </h3>
+    
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star" ></i>
+                 <i class="fa fa-star-half-o" ></i><br> 
+            <p> The use of this  platform has contributed to an increase in our brand awareness and customer loyalty. <br> I strongly recommend the use of such a platform for any brand looking to expand its social media presence and reach a broader audience.</p>
+            </div>
+          </div>
+       </div>
+     </section><!-- fin section4--->
+  
+      
+    <section class="swip" id="about"> <!-- start section5--->
+        <center><h1>  Discover who we are </h1></center>
+       <br>
+       <!-- Cette balise div contient une classe "swiper" qui est utilisée pour inclure le contenu d'une présentation basée sur le plugin JavaScript Swiper -->
+      <div class="swiper">
+            <div class="swiper-wrapper"><!--Cette balise div est utilisée pour contenir les diapositives de la présentation -->
+              <!--Cette balise div est utilisée pour créer une diapositive dans la présentation -->
+            <div  class="swiper-slide bg-image" style="background-image: linear-gradient(rgba(37, 39, 40, 0.7), rgba(4, 9, 10, 0.7)), url(images/about1.jpg);">
+                 <!--Cette balise div est utilisée pour contenir le contenu de chaque diapositive, y compris le texte et les images -->
+                <div class="slide-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                     <h2>About us </h2> 
+                </div>
+            </div>
+
+            <div class="swiper-slide bg-image">
+                <div class="slide-content">
+                   <p>Welcome to our platform that connects influencers and brands! We believe that collaboration is the key to success in the world of marketing, and we're here to make that happen. Our mission is to provide a space where influencers can showcase their talent, while brands can find the perfect influencers to promote their products and services. We pride ourselves on being a trusted partner for both influencers and brands, and we're committed to providing a seamless experience for all. Join us today and be part of our growing community.</p>
+                </div>
+            </div>
+  
+        </div>
+   
+           <div class="swiper-pagination"></div><!-- Cette balise div est utilisée pour afficher la pagination de la présentation -->
+           <!--Ces balises div sont utilisées pour afficher les boutons de navigation "Précédent" et "Suivant" de la présentation -->
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+      </div>
+   
+    </section><!--fin section 5-->
+
+    <section class="footer"><!--start section 6-->
+      <!--Cette section correspond à la partie du bas de page appelée "footer" qui contient plusieurs éléments tels que des liens vers d'autres pages du site, des icônes de réseaux sociaux et une mention de droits d'auteu -->
+       <div class="icons"> <!--cette balise contient les icônes de réseaux sociaux-->
+           <div class="icons">
+            <a href="https://twitter.com"><i class="fa fa-twitter" ></i> </a>
+            <a href="https://www.linkedin.com"><i class="fa fa-linkedin" ></i> </a>
+             <a href="https://www.facebook.com"><i class="fa fa-facebook" ></i> </a>
+             <a href="https://www.instagram.com"><i class="fa fa-instagram" ></i></a>
+            </div>
+       </div>
+     <br>
+
+      <ul class="list"><!--cette balise contient une liste de liens -->
+    	<li><a href="#"> Home</a></li>
+      <li><a href="#login"> Login </a></li>
+      <li><a href="#about"> About  </a></li>
+    	<li><a href="contact.html"> Contact </a></li>
+     </ul>
+     </br>
+    <p>Copyright © 2023 <strong><em>Unify</em></strong> All rights reserved</p>
+    
+   </section><!--fin section 6-->
+
+
+     <!--Cette partie de code est du JavaScript qui sert à contrôler le menu de navigation pour les petits appareils et à initialiser le plugin Swiper pour créer un slider-->
+
+         <script>
+            var navLinks =document.getElementById("navLinks");
+            /*La fonction "hideMenu()"cache le menu de navigation en définissant la position de "navLinks.style.right" à -200px*/
+             function hideMenu(){
+             navLinks.style.right="-200px";
+             }
+            /*la fonction "showMenu()" affiche le menu en définissant la position de "navLinks.style.right" à 0px*/
+             function showMenu(){
+             navLinks.style.right="0px";
+             }
+
+              /*initialise un nouvel objet Swiper, en lui donnant les options de navigation, de pagination et d'effet de transition*/
+            const swiper = new Swiper(".swiper", {
+            navigation:{
+                   prevEl: ".swiper-button-prev",
+                   nextEl: ".swiper-button-next"
+                       },
+               pagination:{
+                   el: ".swiper-pagination",
+                   clickable: true
+                       },
+               effect: "coverflow"
+            });
+       
+    
+          </script>
+
+   </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+            
+            
+          
+
+
+

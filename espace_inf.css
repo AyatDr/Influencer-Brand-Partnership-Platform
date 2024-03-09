@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden; /* Empêcher le débordement horizontal */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2 {
+  margin-left: 350px;
+  color: #84abc2;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-left: 350px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+      font-size: 16px;
+  }
+}
+
+.lg img {
+  width: 80px;
+  border-radius: 50%;
+  margin-left: -110px;
+  margin-right: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu {
+  position: fixed;
+  background: #84abc2;
+  width: 23vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+}
+
+.side-menu li {
+  font-size: 24px;
+  padding: 10px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu li:hover {
+  background: gray;
+  color: black;
+}
+
+.profile-body {
+  margin: 50px ;
+  margin-left: 500px;
+ 
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  border: 2px solid #CCCCCC;
+  width: 50%;
+  max-width: 900px; /* Ajuster la largeur maximale selon votre besoin */
+}
+
+.profile {
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  border: 2px solid #CCCCCC;
+}
+
+.profile h2 {
+  text-align: center;
+ 
+  margin-bottom: 20px;
+}
+
+.profile label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.profile input[type="password"],
+.profile textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.profile textarea {
+  height: 150px;
+}
+
+.profile button[type="submit"] {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.profile button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.info {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.username {
+  font-size: 20pt;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.photo {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.image--cover {
+  width: 170px;
+  height: 170px;
+  border: black 3px solid;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .image--cover {
+      width: 140px;
+      height: 140px;
+      border-radius: 90%;
+  }
+}

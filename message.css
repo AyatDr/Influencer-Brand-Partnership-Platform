@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+
+}
+
+h2 {
+    color: black;
+}
+p {
+    
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; /* Définir le texte en gras */
+    margin-top: 10px;
+    margin-right: -320px; /* Réduire la marge droite pour éviter la rupture de ligne */
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+@media screen and (max-width: 700px) {
+  p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; /* Définir le texte en gras */
+    margin-top: 10px;
+    margin-right: -150px; /* Réduire la marge droite pour éviter la rupture de ligne */
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+
+
+h1 {
+    color:#84abc2;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left:20%;
+  }
+
+
+  td {
+    text-align: left;
+    padding: 8px;
+}
+th {
+    text-align: left;
+    padding: 8px;
+    background:#84abc2; 
+}
+.logo {
+  width: 80px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-top:0px;
+  margin-left: -110px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:5px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.lg h1 {
+  /* Ajouter une marge gauche positive pour crÃ©er un espace entre l'icÃ´ne et le titre */
+  margin-left: -10px;
+}
+@media screen and (max-width: 700px) {
+.logo {
+ width: 60px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: 50px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:50px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+}
+
+.side-menu {
+    position: fixed;
+    background: #84abc2;
+    width: 23vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.side-menu .lg {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu ul li i {
+  margin-left:-85px;
+  margin-right: 30px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .side-menu li span {
+        display: none;
+         width: 10px;
+    }
+    .side-menu {
+        align-items: center;
+        width:140px;
+    }
+    .side-menu li  {
+        width: 40px;
+        height: 40px;
+        margin-left:130px;
+    }
+    
+
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+    color:black;
+    background-color:#f5f5f5;
+}
+
+
+.profile {
+
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  border: 2px solid #CCCCCC;
+  width: 80%;
+  max-width: 600px;
+  margin-right: 210px;
+  margin-top: 40px;
+}
+
+.profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.profile label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.profile input[type="password"],
+.profile textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.profile textarea {
+  height: 150px;
+}
+
+.profile button[type="submit"] {
+  margin-top: 40px;
+  background-color: black;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: center;
+}
+
+.profile button[type="submit"]:hover {
+  background-color: #84abc2;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 50px auto; /* centre la table horizontalement et ajoute une marge de 50px au-dessus */
+  text-align: center; /* centre le contenu de la table */
+    margin-right: 120px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 700px) {
+table{
+
+   border-collapse: collapse;
+   width: 60%;
+  
+    text-align: center; /* centre le contenu de la table */
+    margin-right: 55px;
+  margin-top: 0px;
+}}
+       
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+
+        img{
+            width:30px;
+            border-radius:80px;
+        }
+
+
+ 
+@media screen and (max-width: 700px) {
+.profile {
+
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  border: 2px solid #CCCCCC;
+  width: 60%;
+  max-width: 600px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+}
+        #message {
+  margin: 50px auto; /* centre la section horizontalement */
+  width: 80%;
+  max-width: 600px;
+}
+
+#message p {
+  background-color: #f2f2f2; /* couleur de fond des bulles de conversation */
+  border-radius: 5px; /* bord arrondi des bulles de conversation */
+  font-size: 16px;
+  padding: 10px 20px; /* espace Ã  l'intÃ©rieur des bulles de conversation */
+  margin-bottom: 10px; /* marge entre les bulles de conversation */
+}
+
+#message p:last-child {
+  margin-bottom: 0; /* supprime la marge sous la derniÃ¨re bulle de conversation */
+}
+
+#message p[style="color:green"] {
+  float: left; /* aligne la bulle de conversation de l'utilisateur Ã  gauche */
+}
+
+#message p[style="color:red"] {
+  float: right; /* aligne la bulle de conversation du destinataire Ã  droite */
+}

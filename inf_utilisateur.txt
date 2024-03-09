@@ -1,0 +1,16 @@
+Pour admin : 
+
+Login: REDA
+Password: password123
+
+
+Pour la marque : 
+
+Login: Ayat
+Password: ayat2002
+
+
+Pour l'influenceur : 
+
+Login: maria
+Password: maria2002

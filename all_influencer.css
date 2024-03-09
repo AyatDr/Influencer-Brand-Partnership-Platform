@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+h1 {
+    color: black;
+}
+@media screen and (max-width: 700px) {
+h1, h2 {
+font-size: 18px;
+
+}
+}
+h2 {
+    color: #84abc2;
+}
+h3 {
+    color: #999;
+}
+.btn {
+    background: #84abc2;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: #84abc2;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid ;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+    color:black;
+}
+table {
+    padding: 10px;
+    
+}
+
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+th {
+    text-align: left;
+    padding: 8px;
+    background:#84abc2; 
+}
+.logo {
+  width: 80px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: -85px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:5px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 700px) {
+.logo {
+ width: 40px;
+  border-radius: 80%;
+  /* Placer le logo à gauche en utilisant la propriété float */
+  float: left;
+  margin-left: -20px; /* ajouter une marge gauche de 50 pixels */
+  margin-right:5px; 
+  /* Ajouter une ombre à la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+}
+.brand-name h1 {
+  /* Ajouter une marge gauche positive pour créer un espace entre l'icône et le titre */
+  margin-left: 5px;
+}
+@media screen and (max-width: 700px) {
+ .brand-name h1{
+    margin-left: 5px;
+
+}
+th {
+  font-size:15px ;
+}
+}
+.side-menu {
+    position: fixed;
+    background: #84abc2;
+    width: 25vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+    background: #efefef;
+    color: black;
+}
+
+.side-menu ul li i {
+  margin-right: 10px !important;
+}
+
+.side-menu.fa-solid {
+  color: black !important;
+}
+
+@media screen and (max-width: 700px) {
+ .side-menu ul li i{
+    margin-left: -40px;
+    font-size: 30px;
+
+}
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+
+
+
+.icon-case i.fa-solid {
+  font-size: 50px;
+  color: #84abc2;
+}
+.user i.fa-solid {
+  font-size: 50px;
+  color: #84abc2;
+}
+
+
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+
+
+
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 700px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+  
+}
+@media screen and (max-width: 700px) {
+    .side-menu li span {
+        display: none;
+         width: 30px;
+    }
+    .side-menu {
+        align-items: center;
+        width:140px;
+    }
+    .side-menu li  {
+        width: 40px;
+        height: 40px;
+        margin-left:30px;
+    }
+    .side-menu li:hover {
+        background: #84abc2;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:700px) {
+    
+   .side-menu li img {
+        width: 30px;
+        height: 30px;
+
+    }
+    
+    .container {
+    position: absolute;
+    right: 0;
+    width: 550px;
+    height: 100px;
+    background: #f1f1f1;
+}
+.container .content .content-2 .recent table th:nth-child(2),
+    .container .content .content-2 .recent table td:nth-child(2) {
+        display: none;
+        width: -10px;
+    }
+}
